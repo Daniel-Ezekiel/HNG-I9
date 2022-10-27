@@ -1,7 +1,12 @@
+import ProfileInfo from './components/ProfileInfo'
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello there!</h1>
+      <main>
+        <ProfileInfo />
+
+      </main>
     </div>
   );
 }
