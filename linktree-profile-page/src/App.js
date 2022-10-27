@@ -1,10 +1,10 @@
-import ProfileInfo from './components/ProfileInfo'
+import ProfileInfo from './components/ProfileInfo';
 
 function App() {
   return (
     <div className="App">
       <main>
-        <ProfileInfo />
+        <ProfileInfo elementId="user-info"/>
 
       </main>
     </div>
