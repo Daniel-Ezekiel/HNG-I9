@@ -12,8 +12,8 @@ const ProfileInfo = ({elementId}) => {
             <h1>Daniel Ezekiel</h1>
 
             <div>
-                <TwitterAndSlack icon={<FaTwitter />} platform="     Twitter"/>
-                <TwitterAndSlack icon={<FaSlack />}  platform="     Slack"/>
+                <TwitterAndSlack icon={<FaTwitter />} platform="Twitter"/>
+                <TwitterAndSlack icon={<FaSlack />}  platform="Slack"/>
             </div>
         </section>
     );

@@ -3,7 +3,7 @@ const TwitterAndSlack = ({ icon, platform }) => {
             <div className="twt-slk">
                 <a href="https://twitter.com/db_ezekiel">
                     {icon}
-                    {platform}
+                    <span className="platform">{platform}</span>
                 </a>
             </div>
     )
