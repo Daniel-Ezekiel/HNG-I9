@@ -1,5 +1,6 @@
 import ProfileInfo from './components/ProfileInfo';
 import ExternalLinks from './components/ExternalLinks';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
         <ProfileInfo elementId="user-info"/>
         
         <ExternalLinks />
+
+        <Footer />
       </main>
     </div>
   );
