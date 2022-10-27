@@ -1,6 +1,6 @@
 const ProfileImage = ({imgUrl}) => {
     return (
-        <img className="profile-image" 
+        <img id="profile_img" 
              src={imgUrl} 
              alt="daniel ezekiel"
         />
