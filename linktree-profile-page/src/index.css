@@ -1,8 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
+html{
+  font-size: 62.5%;
+}
+
 body {
-  margin: 0;
+  margin: 1.2rem;
   font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.share-desktop,
+#slack{
+  display: none;
+}
+
+#user-info,
+#links-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.share-mobile,
+.share-desktop{
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  width: 3.5rem;
+}
+
+#profile__img{
+  width: 10rem;
+  border-radius: 50%;
+}
+
+h1{
+  margin: 2rem 0;
+
+  font-size: 1.8rem;
+}
+
+#links-section{
+  text-align: center;
+  margin: 1.5rem;
+}
+
+#links-section > a{
+  display: inline-block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 2rem 1.5rem;
+  background-color: #EAECF0;
+  border-radius: 0.5rem;
+
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+a > p{
+  margin: 0.5rem 0;
+
+  font-weight: 400;
+  font-style: italic;
+}
+
+.socials a {
+  display: inline-block;
+  padding: 1.2rem;
+}
+
+footer{
+  border-top: 1px solid #EAECF0;
+  margin-top: 7.5rem;
+  padding: 2.5rem 0;
 }
