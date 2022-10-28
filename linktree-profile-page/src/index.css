@@ -10,6 +10,7 @@ body {
 
   font-family: 'Inter', sans-serif;
   font-size: 1.4rem;
+  color: #101828;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -68,7 +69,7 @@ h1{
   margin: 1rem 0;
   padding: 2.5rem 1.5rem;
   background-color: #EAECF0;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
 
   font-weight: 600;
   color: #000;
