@@ -5,7 +5,7 @@ const ExternalLinks = () => {
     return (
         <section id="links-section">
             <Link id="twitter" url="https://twitter.com/db_ezekiel" name="@db_ezekiel"/>
-            <Link id="slack" url="https://hng9.slack.com/" title="@db-ezekiel" />
+            <Link id="slack" url="https://hng9.slack.com/"name="@danielezekiel" />
 
             <Link id="btn__zuri" url="https://training.zuri.team/" name="Zuri Team" />
             <Link id="books" url="https://books.zuri.team/" name="Zuri Books" title="Visit to find books about design and coding." />
