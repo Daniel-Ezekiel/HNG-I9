@@ -6,10 +6,16 @@ html{
 
 body {
   margin: 1.2rem;
+  min-height: 100vh;
+
   font-family: 'Inter', sans-serif;
   font-size: 1.4rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main{
+  padding: 5.5rem 1.5rem 0;
 }
 
 .share-desktop,
@@ -47,15 +53,15 @@ h1{
 }
 
 #links-section{
+  padding-bottom: 9.5rem;
   text-align: center;
-  margin: 1.5rem;
 }
 
 #links-section > a{
   display: inline-block;
   width: 100%;
   margin: 1rem 0;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   background-color: #EAECF0;
   border-radius: 0.5rem;
 
@@ -65,7 +71,7 @@ h1{
 }
 
 a > p{
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
 
   font-weight: 400;
   font-style: italic;
@@ -76,8 +82,15 @@ a > p{
   padding: 1.2rem;
 }
 
+a:hover{
+  background-color: #EAECF0;
+  transform: scale(1.03);
+  transition: transform 0.4s ease-in-out;
+}
+
 footer{
   border-top: 1px solid #EAECF0;
-  margin-top: 7.5rem;
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 1.5rem;
 }
+
+@media screen and ()
