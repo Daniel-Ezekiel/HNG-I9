@@ -47,7 +47,7 @@ main{
 }
 
 #profile__img{
-  width: 10rem;
+  width: 12rem;
   border-radius: 50%;
 }
 
@@ -62,7 +62,7 @@ h1{
   text-align: center;
 }
 
-#links-section > a{
+.link{
   display: inline-block;
   width: 100%;
   margin: 1rem 0;
@@ -75,7 +75,7 @@ h1{
   text-decoration: none;
 }
 
-a > p{
+.link > p{
   margin: 0.8rem 0;
 
   font-weight: 400;
@@ -87,7 +87,7 @@ a > p{
   padding: 1.2rem;
 }
 
-#links-section a:hover{
+.link:hover{
   background-color: #EAECF0;
   transform: scale(1.03);
   transition: transform 0.4s ease-in-out;
