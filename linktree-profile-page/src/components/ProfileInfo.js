@@ -1,9 +1,9 @@
-import ProfileImage from "./ProfileImage";
+import Image from "./Image";
 
 const ProfileInfo = ({elementId}) => {
     return (
         <section id={elementId}>
-            <ProfileImage imgUrl="https://danielezekiel.me/img/profile.webp" />
+            <Image id="profile__img" imgUrl="https://danielezekiel.me/img/profile.webp" alt="Daniel Ezekiel" />
 
             <h1>Daniel Ezekiel</h1>
         </section>
