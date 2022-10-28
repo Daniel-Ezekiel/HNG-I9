@@ -1,11 +1,10 @@
-const Link = ({ id, url, title, subText }) => {
+const Link = ({ id, url, title }) => {
     return (
         <a id={id} 
            href={url}
            className="link"
            target="_blank">
             {title}
-            {subText ? <p className="link-description">{subText}</p> : <>{subText}</>}
         </a>
     )
 }
