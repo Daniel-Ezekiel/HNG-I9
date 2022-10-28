@@ -78,7 +78,7 @@ a > p{
 }
 
 .socials a {
-  display: inline-block;
+  display: inline-block;;
   padding: 1.2rem;
 }
 
@@ -88,9 +88,27 @@ a:hover{
   transition: transform 0.4s ease-in-out;
 }
 
+.socials a:hover{
+  background: none;
+}
+
 footer{
   border-top: 1px solid #EAECF0;
   padding: 2.5rem 0 1.5rem;
 }
 
-@media screen and ()
+footer p{
+  color: #667085;
+}
+
+@media screen and (min-width: 768px){
+  main{
+    max-width: 120rem;
+    margin: auto;
+  }
+
+  footer div{
+    display: flex;
+    justify-content: space-between;
+  }
+}
