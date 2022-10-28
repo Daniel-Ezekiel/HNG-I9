@@ -1,6 +1,8 @@
 const Link = ({ id, url, title, subText }) => {
     return (
-        <a id={id} href={url}>
+        <a id={id} 
+           href={url}
+           target="_blank">
             {title}
             {subText ? <p className="link-description">{subText}</p> : <>{subText}</>}
         </a>
