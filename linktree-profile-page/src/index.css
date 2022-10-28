@@ -33,6 +33,11 @@ main{
   position: relative;
 }
 
+#user-info{
+  max-width: 70rem;
+  margin: auto;
+}
+
 .share-mobile,
 .share-desktop{
   position: absolute;
@@ -82,7 +87,7 @@ a > p{
   padding: 1.2rem;
 }
 
-a:hover{
+#links-section a:hover{
   background-color: #EAECF0;
   transform: scale(1.03);
   transition: transform 0.4s ease-in-out;
@@ -105,6 +110,14 @@ footer p{
   main{
     max-width: 120rem;
     margin: auto;
+  }
+
+  .share-mobile{
+    display: none;
+  }
+
+  .share-desktop{
+    display: block;
   }
 
   footer div{
