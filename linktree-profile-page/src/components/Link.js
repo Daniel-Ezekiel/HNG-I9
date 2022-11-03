@@ -4,7 +4,7 @@ const Link = ({ id, url, name, title }) => {
            href={url}
            title={title}
            className="link"
-           target="_blank"
+           target={id !== 'contact' ? "_blank" : ""}
            rel="noreferrer">
             {name}
         </a>
