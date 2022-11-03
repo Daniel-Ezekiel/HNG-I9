@@ -8,8 +8,6 @@ export const Home = () => {
         <ProfileInfo elementId="user-info"/>
         
         <ExternalLinks />
-
-        <Footer />
       </main>
   );
 }
