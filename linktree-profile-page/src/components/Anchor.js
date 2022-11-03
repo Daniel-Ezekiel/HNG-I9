@@ -1,4 +1,4 @@
-const Link = ({ id, url, name, title }) => {
+const Anchor = ({ id, url, name, title }) => {
     return (
         <a id={id} 
            href={url}
@@ -11,8 +11,8 @@ const Link = ({ id, url, name, title }) => {
     )
 }
 
-Link.defaultProps = {
+Anchor.defaultProps = {
     subText: ''
 }
 
-export default Link;
+export default Anchor;
