@@ -1,18 +1,15 @@
-import ProfileInfo from './components/ProfileInfo';
-import ExternalLinks from './components/ExternalLinks';
-import Footer from './components/Footer';
+import { Home } from './pages/Home';
+import { Contact } from './pages/Contact';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <main>
-        <ProfileInfo elementId="user-info"/>
-        
-        <ExternalLinks />
-
-        <Footer />
-      </main>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={ <Home /> } />
+        <Route path='/contact' element={ <Contact /> } />
+      </Routes>    
+    </>
   );
 }
 
