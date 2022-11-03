@@ -3,24 +3,25 @@ const Form = () => {
         <form>
             <div className="form-control">
                 <label>First name</label>
-                <input id="first__name" name="first name" type="text" />
+                <input id="first_name" name="first name" type="text" placeholder="Enter your first name" required/>
             </div>
             <div className="form-control">
                 <label>Last name</label>
-                <input id="last__name" name="last name" type="text" />
+                <input id="last_name" name="last name" type="text" placeholder="Enter yourlast name" required/>
             </div>
             <div className="form-control">
-                <label>Email name</label>
-                <input id="email" name="email" type="text" />
+                <label>Email</label>
+                <input id="email" name="email" type="text" placeholder="yourname@email.com" required/>
             </div>
             <div className="form-control">
                 <label>Message</label>
-                <textarea id="message" name="message" />
+                <textarea id="message" name="message" placeholder="Send me a message and I'll reply you as soon as possible..." required/>
             </div>
             <div className="form-control form-control-check">
                 <label>You agree to providing your data to Daniel Ezekiel who may contact you</label>
-                <input id="first__name" name="first name" type="checkbox" />
+                <input id="checkbox" name="agreement" type="checkbox" required />
             </div>
+            <button id="btn__submit">Send Message</button>
         </form>
     );
 }
