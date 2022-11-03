@@ -11,7 +11,7 @@ const Form = () => {
             </div>
             <div className="form-control">
                 <label>Email</label>
-                <input id="email" name="email" type="text" placeholder="yourname@email.com" required/>
+                <input id="email" name="email" type="email" placeholder="yourname@email.com" required/>
             </div>
             <div className="form-control">
                 <label>Message</label>
@@ -21,7 +21,7 @@ const Form = () => {
                 <label>You agree to providing your data to Daniel Ezekiel who may contact you</label>
                 <input id="checkbox" name="agreement" type="checkbox" required />
             </div>
-            <button id="btn__submit">Send Message</button>
+            <button id="btn__submit" value="Send Message">Send Message</button>
         </form>
     );
 }
