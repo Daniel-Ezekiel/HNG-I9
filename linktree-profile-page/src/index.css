@@ -163,10 +163,8 @@ footer p{
 
 .form-control-check{
   padding: 1rem 0;
-  flex-direction: row-reverse;
   display: flex;
-  justify-content: start;
-  align-items: flex-start;
+  flex-direction: row-reverse;align-items: flex-start;
   gap: 1.2rem;
 }
 
@@ -180,6 +178,7 @@ label{
 }
 
 .form-control-check label{
+  width: inherit;
   font-weight: 400;
 }
 
@@ -187,6 +186,7 @@ input,
 textarea{
   display: block;
   width: -webkit-fill-available;
+  width: -moz-available;
   padding: 1.2rem 1.4rem;
   border: 0.1rem solid rgba(208, 213, 221, 1);
   border-radius: 0.8rem;
