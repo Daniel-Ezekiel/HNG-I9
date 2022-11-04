@@ -39,6 +39,12 @@ main{
   margin: auto;
 }
 
+.share-btn{
+  appearance: none;
+  border: none;
+  background-color: transparent;
+}
+
 .share-mobile,
 .share-desktop{
   position: absolute;
