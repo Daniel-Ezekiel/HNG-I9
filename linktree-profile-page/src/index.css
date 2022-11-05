@@ -210,6 +210,8 @@ textarea:focus {
 
 .form-field-error{
   display: block;
+
+  font-weight: 500;
   color: #F89687;
 }
 
