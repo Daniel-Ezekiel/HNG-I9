@@ -36,12 +36,12 @@ const Form = () => {
             <div className="form-control">
                 <label>First name</label>
                 <input  id="first_name"
+                        className={firstName ? 'valid' : 'invalid'}
                         name="first name" 
                         type="text" 
                         placeholder="Enter your first name" 
                         value={firstName} 
                         onChange={ (e) => setFirstName(e.target.value) }
-                        required
                     />
                 {firstName && <small>This field takes in your first name</small>}
                 {(submitted && !firstName) && <small className="form-field-error">Please enter a first name</small>
@@ -51,12 +51,12 @@ const Form = () => {
             <div className="form-control">
                 <label>Last name</label>
                 <input  id="last_name" 
+                        className={lastName ? 'valid' : 'invalid'}
                         name="last name" 
                         type="text" 
-                        placeholder="Enter your last name" 
                         value={lastName}
                         onChange={ (e) => setLastName(e.target.value)}
-                        required
+                        placeholder="Enter your last name" 
                     />
                 {lastName && <small>This field takes in your last name or surname</small>}
                 {(submitted && !lastName) && <small className="form-field-error">Please enter a last name</small>
@@ -66,12 +66,12 @@ const Form = () => {
             <div className="form-control">
                 <label>Email</label>
                 <input  id="email" 
+                        className={email ? 'valid' : 'invalid'}
                         name="email" 
                         type="email" 
-                        placeholder="yourname@email.com" 
                         value={email}
                         onChange={ (e) => setEmail(e.target.value) }
-                        required
+                        placeholder="yourname@email.com" 
                     />
                 {email && <small>This field takes in your email address (must contain '@')</small>}
                 {(submitted && !email) && <small className="form-field-error">Please enter an email address</small>
@@ -81,11 +81,11 @@ const Form = () => {
             <div className="form-control">
                 <label>Message</label>
                 <textarea  id="message" 
+                            className={message ? 'valid' : 'invalid'}
                             name="message" 
                             value={message}
-                            placeholder="Send me a message and I'll reply you as soon as possible..."
                             onChange={ (e) => setMessage(e.target.value) }
-                            required
+                            placeholder="Send me a message and I'll reply you as soon as possible..."
                         />
                 {message && <small>This field takes in your message for Daniel</small>}
                 {(submitted && !message) && <small className="form-field-error">Please enter a message</small>
@@ -101,7 +101,6 @@ const Form = () => {
                                 checked={permission}
                                 value={permission}
                                 onChange={ (e) => setPermission(e.currentTarget.checked) }
-                                required
                             />
                 </div>
                 {(submitted && !permission) && <small className="form-field-error">Please check the box to continue</small>}

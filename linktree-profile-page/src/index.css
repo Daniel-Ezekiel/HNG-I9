@@ -215,8 +215,8 @@ textarea:focus {
   color: #F89687;
 }
 
-input:invalid,
-textarea:invalid{
+input.invalid,
+textarea.invalid{
   outline-color: #F89687;
 }
 
