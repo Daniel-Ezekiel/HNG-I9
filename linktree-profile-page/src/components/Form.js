@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaCheck } from 'react-icons/fa'
 
 
 const Form = () => {
@@ -7,9 +8,21 @@ const Form = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [permission, setPermission] = useState(false);
+    const [successMessage, setSuccessMessage] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
     
     const onSubmit = (e) => {
-        e.preventDefault();       
+        e.preventDefault();        
+        
+        setSubmitted(true);
+        if(firstName && lastName && email && message && permission){
+            setSubmitted(false);
+            setSuccessMessage(true);
+        }
+
+        setTimeout( () => {
+            setSuccessMessage(false);
+        }, 10000)
 
         setFirstName('');
         setLastName('');
@@ -27,8 +40,11 @@ const Form = () => {
                         type="text" 
                         placeholder="Enter your first name" 
                         value={firstName} 
-                        onChange={ (e) => setFirstName(e.target.value) } required
+                        onChange={ (e) => setFirstName(e.target.value) }
                     />
+                {firstName && <small>This field takes in your first name</small>}
+                {(submitted && !firstName) && <small className="form-field-error">Kindly enter a first name</small>
+                }
             </div>
 
             <div className="form-control">
@@ -39,8 +55,10 @@ const Form = () => {
                         value={lastName}
                         onChange={ (e) => setLastName(e.target.value)}
                         placeholder="Enter your last name" 
-                        required
                     />
+                {lastName && <small>This field takes in your last name or surname</small>}
+                {(submitted && !lastName) && <small className="form-field-error">Kindly enter a last name</small>
+                }
             </div>
 
             <div className="form-control">
@@ -51,8 +69,10 @@ const Form = () => {
                         value={email}
                         onChange={ (e) => setEmail(e.target.value) }
                         placeholder="yourname@email.com" 
-                        required
                     />
+                {email && <small>This field takes in your email address (must contain '@')</small>}
+                {(submitted && !email) && <small className="form-field-error">Kindly enter an email address</small>
+                }
             </div>
 
             <div className="form-control">
@@ -61,24 +81,31 @@ const Form = () => {
                             name="message" 
                             value={message}
                             onChange={ (e) => setMessage(e.target.value) }
-                            placeholder="Send me a message and I'll reply you as soon as possible..." 
-                            required
+                            placeholder="Send me a message and I'll reply you as soon as possible..."
                         />
+                {message && <small>This field takes in your message for Daniel</small>}
+                {(submitted && !message) && <small className="form-field-error">Kindly enter a message</small>
+                }
             </div>
 
             <div className="form-control form-control-check">
-                <label>You agree to providing your data to Daniel Ezekiel who may contact you</label>
-                <input  id="checkbox" 
-                            name="agreement" 
-                            type="checkbox" 
-                            checked={permission}
-                            value={permission}
-                            onChange={ (e) => setPermission(e.currentTarget.checked) }
-                            required 
-                        />
+                <div>
+                    <label>You agree to providing your data to Daniel Ezekiel who may contact you</label>
+                    <input  id="checkbox" 
+                                name="agreement" 
+                                type="checkbox" 
+                                checked={permission}
+                                value={permission}
+                                onChange={ (e) => setPermission(e.currentTarget.checked) }
+                            />
+                </div>
+                {(submitted && !permission) && <small className="form-field-error">Kindly check the box to continue</small>}
             </div>
 
             <button  id="btn__submit" value="Send Message">Send Message</button>
+            {successMessage && 
+                <small className="form-success"> <FaCheck /> Message Sent Successfully</small>
+            }
         </form>
     );
 }
