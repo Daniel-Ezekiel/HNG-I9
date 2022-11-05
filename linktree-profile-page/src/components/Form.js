@@ -22,7 +22,7 @@ const Form = () => {
 
         setTimeout( () => {
             setSuccessMessage(false);
-        }, 10000)
+        }, 3000)
 
         setFirstName('');
         setLastName('');
