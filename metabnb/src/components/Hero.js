@@ -13,7 +13,9 @@ const Hero = () => {
                 <Search />
             </div>
 
-            <Image imgSrc="img/main-img.png" />
+            <div>
+                <Image imgSrc="img/main-img.png" />
+            </div>
         </section>
     );
 }

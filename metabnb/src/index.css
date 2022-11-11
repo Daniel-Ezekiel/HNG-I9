@@ -5,15 +5,37 @@ html{
 }
 
 body{
+  margin: 0;
+
   font-family: 'Red Rose', cursive;
   font-size: 1.5rem;
   line-height: 1.5;
 }
 
-main{
-  padding: 1.5rem;
+img{
+  display: block;
+  width: 100%;
 }
 
-img{
-  width: 100%;
+#hero-section,
+#padding-section{
+  padding: 1.2rem;
+}
+
+#banner-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 2.5rem 0;
+  background-color: #000;
+}
+
+#banner-section img{
+  width: 20rem;
+}
+
+.homes-container{
+  padding: 1.5rem;
 }
