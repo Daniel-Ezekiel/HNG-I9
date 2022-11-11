@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap');
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Red Rose', cursive;
+  line-height: 1.5}
