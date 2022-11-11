@@ -21,7 +21,50 @@ img{
 #padding-section,
 #homes-section,
 #nft-section{
-  padding: 1.2rem;
+  padding: 3rem 1.5rem;
+}
+
+#hero-section div:first-child{
+  margin-bottom: 5rem;
+  padding-right: 2rem;
+}
+
+h1{
+  margin: 0.5rem;
+
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+strong{
+  color: #A02279;
+}
+
+.search-box{
+  display: flex;
+}
+
+input,
+button{
+  display: block;
+  padding: 1.5rem 1.5rem;
+
+  font-family: 'Red Rose', cursive;
+}
+
+input{
+  width: 70%;
+  border: 0.05rem solid #000;
+  border-right: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+button{
+  width: 30%;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: #A02279;
+
+  color: #fff
 }
 
 #banner-section{
@@ -30,14 +73,102 @@ img{
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  margin: 5rem 0 1.5rem;
   padding: 2.5rem 0;
-  background-color: #000;
+  background-color: #A02279;
 }
 
 #banner-section img{
   width: 20rem;
 }
 
+ h2{
+  font-size: 3.2rem;
+  text-align: center;
+}
+
 .homes-container{
   padding: 1.5rem;
+}
+
+#nft-section{
+  background-color: #A02279;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+
+  color: #fff;
+}
+
+.nft-info{
+  margin-bottom: 4.5rem;;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nft-info h2{
+  margin-bottom: 0;
+  text-align: unset;
+}
+
+.nft-info p{
+  line-height: 2;
+}
+
+#btn__learn-more{ 
+  width: fit-content;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+
+  text-decoration: none;
+  color: #A02279;
+}
+
+footer{
+  padding: 5rem 1.5rem 1.5rem;
+  background-color: #1D1D1E;
+  color: #fff;
+}
+
+.metabnb-profile img{
+  width: 25rem;
+}
+
+.social-icons{
+  width:10rem;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons svg{
+  height: 2rem;
+  width: 2rem;
+}
+
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+}
+
+h4{
+  font-size: 1.8rem;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+li > a{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer p{
+  text-align: center;
 }

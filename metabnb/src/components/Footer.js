@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer>
         <section className="footer-nav">
-            <div>
+            <div className="metabnb-profile">
                 <Image imgSrc={"img/metabnb-logo.png"} />
 
                 <div className='social-icons'>
