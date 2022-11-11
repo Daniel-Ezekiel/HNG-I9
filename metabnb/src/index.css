@@ -18,7 +18,9 @@ img{
 }
 
 #hero-section,
-#padding-section{
+#padding-section,
+#homes-section,
+#nft-section{
   padding: 1.2rem;
 }
 
