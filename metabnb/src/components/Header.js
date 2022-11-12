@@ -3,11 +3,12 @@ import Image from './Image';
 import '../nav.css';
 
 const Header = () => {
-    const menuBtn = document.querySelector('.nav-btn');
-    const menuBar = document.querySelector('.hamburger');
-    const menuList = document.querySelector('.nav-menu');
-
+    
     const showMenu = () => {
+        const menuBtn = document.querySelector('.nav-btn');
+        const menuBar = document.querySelector('.hamburger');
+        const menuList = document.querySelector('.nav-menu');
+        
         menuBtn.classList.toggle('is-active');
         menuBar.classList.toggle('is-active');
         menuList.classList.toggle('is-active');
