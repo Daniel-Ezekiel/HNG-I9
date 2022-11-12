@@ -13,7 +13,7 @@ const Footer = () => {
     <footer>
         <section className="footer-nav">
             <div className="metabnb-profile">
-                <Image imgSrc={"img/metabnb-logo.png"} />
+                <Image imgSrc={"img/metabnb-logo1.png"} />
 
                 <div className='social-icons'>
                     <FaFacebookF />
