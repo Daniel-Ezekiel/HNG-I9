@@ -1,10 +1,16 @@
-const Search = () => {
+const Search = ( {className, placeholder, btnName} ) => {
   return (
-    <div className="search-box">
-        <input type="text" placeholder="Search for location" />
-        <button id="btn__search" >Search</button>
+    <div className={className}>
+        <input type="text" placeholder={placeholder} />
+        <button id="btn__search" >{btnName}</button>
     </div>
   )
+}
+
+Search.defaultProps = {
+  className: 'search-box',
+  placeholder: 'Search for location',
+  btnName: 'Search',
 }
 
 export default Search
