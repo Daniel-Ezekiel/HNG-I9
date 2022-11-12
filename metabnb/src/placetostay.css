@@ -1,0 +1,33 @@
+#all-homes-section{
+    padding: 2rem 0;
+}
+
+li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.location-search{
+    position: relative;
+}
+
+.location-search > input{
+    width: 85%;
+    display: block;
+    margin: auto;
+    border: 0.1rem solid #000;
+    border-radius: 0.5rem;
+}
+
+.location-search > button{
+    position: absolute;
+    top: 0.8rem;
+    right: 2.2rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    background-color: transparent;
+}
+
+button img{
+}
