@@ -30,10 +30,10 @@ const Header = () => {
                 <ul className='nav-menu'>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/placetostay">Place to Stay</Link></li>
-                    <li><Link to="/#nft-section">NFTs</Link></li>
-                    <li><Link to="/#">Community</Link></li>
+                    <li><Link to="#nft-section">NFTs</Link></li>
+                    <li><Link to="#">Community</Link></li>
                     <li>
-                        <Link to="/#">
+                        <Link to="#">
                             <button className='connect-btn' onClick={showModal}>
                                 Connect Wallet
                             </button>
