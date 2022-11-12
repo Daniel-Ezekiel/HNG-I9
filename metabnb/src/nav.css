@@ -18,9 +18,17 @@ nav{
     text-decoration: underline;
 }
 
+.nav-menu li:last-child a{
+    text-decoration: none;
+}
+
 .connect-btn{
     width: 100%;
     border-radius: 1rem;
+}
+
+.connect-btn:hover{
+    background-color: #c52a94;
 }
   
 .nav-menu{
@@ -119,4 +127,52 @@ nav{
     width: 100%;
     transform: rotate(-45deg) translateX(1.5rem) ;
 }
-  
+
+/************************
+/************************
+/*****MEDIA QUERIES******
+*************************
+************************/
+@media screen and (min-width: 1024px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 95rem;
+        margin: auto;
+    }
+    
+    .nav-btn{
+        display: none;
+    }    
+
+    .nav-menu{
+        display: flex;
+        flex-direction: row;
+        position: static;
+        height: fit-content;
+        justify-content: flex-end;
+    }
+
+    .nav-menu li:last-child{
+        margin-left: 24%;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    nav{
+        width: 124rem;
+        margin: auto;
+    }
+
+    .logo{
+        width:25rem;
+    }
+
+    .nav-menu a{
+        font-size: 1.8rem;
+    }
+
+    .nav-menu li:last-child{
+        margin-left: 22%;
+    }
+}

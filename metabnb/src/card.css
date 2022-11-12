@@ -22,8 +22,19 @@ span{
     display: block;
     padding-bottom: 0.8rem;
     width: 50%;
+
+    font-size: 1.3rem;
+}
+
+span:nth-child(odd){
+  width: fit-content;
 }
 
 span:nth-child(even){
+    width: 60%;
     text-align: right;
+}
+
+span:last-child{
+    width: 100%;
 }

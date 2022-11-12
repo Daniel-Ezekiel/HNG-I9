@@ -56,7 +56,7 @@ h3{
     background: none;
 }
 
-button:hover{
+.modal-wallets  button:hover{
     background-color: #F8F9FA;
 }
 
