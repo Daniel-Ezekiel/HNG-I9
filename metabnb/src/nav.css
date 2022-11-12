@@ -17,6 +17,11 @@ nav{
 .nav-menu a:hover{
     text-decoration: underline;
 }
+
+.connect-btn{
+    width: 100%;
+    border-radius: 1rem;
+}
   
 .nav-menu{
     position: fixed;
