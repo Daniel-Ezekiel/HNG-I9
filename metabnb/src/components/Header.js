@@ -1,22 +1,17 @@
 import { Link } from 'react-router-dom';
 import Image from './Image';
 import '../nav.css';
-import { useEffect } from 'react';
 
 const Header = () => {
-    useEffect( () => {
-        const menuBtn = document.querySelector('.nav-btn');
-        const menuBar = document.querySelector('.hamburger');
-        const menuList = document.querySelector('.nav-menu');
-        
-        menuBtn.addEventListener( 'click', showMenu );
+    const menuBtn = document.querySelector('.nav-btn');
+    const menuBar = document.querySelector('.hamburger');
+    const menuList = document.querySelector('.nav-menu');
 
-        function showMenu(){
-            menuBtn.classList.toggle('is-active');
-            menuBar.classList.toggle('is-active');
-            menuList.classList.toggle('is-active');
-        }
-    }, [] )
+    const showMenu = () => {
+        menuBtn.classList.toggle('is-active');
+        menuBar.classList.toggle('is-active');
+        menuList.classList.toggle('is-active');
+    }
 
 
     return (
@@ -28,12 +23,12 @@ const Header = () => {
 
                 <ul className='nav-menu'>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/#homes-section">Place to Stay</Link></li>
+                    <li><Link to="/placetostay">Place to Stay</Link></li>
                     <li><Link to="/#nft-section">NFTs</Link></li>
                     <li><Link to="/#">Community</Link></li>
                 </ul>
 
-                <button type="button" className="nav-btn">
+                <button type="button" className="nav-btn" onClick={showMenu}>
                     <div className="hamburger"></div>
                 </button>
             </nav>
