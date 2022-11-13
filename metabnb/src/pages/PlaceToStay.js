@@ -9,7 +9,7 @@ export const PlaceToStay = () => {
     return (
         <section id="all-homes-section">
             <div className="location-categories">
-                <ul style={ { justifyContent: 'space-evenly', flexFlow: 'row wrap'} }>
+                <ul>
                     {categories.map( (location, id) => <li key={id}><Link to="#">{location}</Link></li> )}
                 </ul>
 

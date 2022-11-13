@@ -1,5 +1,19 @@
 #all-homes-section{
-    padding: 2rem 0;
+    padding: 1.2rem;
+    padding-bottom: 5rem;
+}
+
+.location-categories{
+    margin: auto;
+    padding-bottom: 4rem;
+    max-width: 38rem;
+}
+
+.location-categories ul{
+    padding: 1.2rem;
+    flex-direction: row;
+    gap: 2rem;
+    overflow: scroll hidden;
 }
 
 li a{
@@ -12,19 +26,74 @@ li a{
 }
 
 .location-search > input{
-    width: 85%;
     display: block;
     margin: auto;
-    border: 0.1rem solid #000;
+    border: 0.1rem solid #B4B4B4;
     border-radius: 0.5rem;
+    width: -webkit-fill-available;
+    width: -moz-available;
 }
 
 .location-search > button{
     position: absolute;
-    top: 0.8rem;
-    right: 2.2rem;
-    width: 3rem;
-    height: 3rem;
+    top: 1.3rem;
+    right: 1.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     padding: 0;
     background-color: transparent;
+}
+
+/************************/
+/************************/
+/*****MEDIA QUERIES******/
+/************************/
+/************************/
+@media screen and (min-width: 540px){
+    #all-homes-section{
+        margin: auto;
+        max-width: 124rem;
+    }
+
+    .location-categories{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .location-categories ul{
+        max-width: 100%;
+    }
+
+    .location-search{
+        width: 22%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .location-categories ul{
+        width: 80%;
+        justify-content: space-between;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .location-categories a{
+        font-size: 1.8rem;
+    }
+
+    .location-search{
+        width: 18rem;
+    }
+
+    .location-search input{
+        font-size: 1.5rem;
+    }
+
+    .location-search > button{
+        top: 1.6rem;
+    }
 }
