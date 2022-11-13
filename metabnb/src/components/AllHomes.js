@@ -1,6 +1,9 @@
-import Home from "./Home"
+import Home from "./Home";
+import { FaStar } from 'react-icons/fa';
 
 const AllHomes = () => {
+    const rating = <><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></>
+
   return (
     <div className="all-homes">
         <div className="homes-container">
@@ -9,7 +12,7 @@ const AllHomes = () => {
                       homePrice="1MBT"
                       homeDistance="2345km" 
                       homeAvailability="available for 2weeks stay"
-                      homeRating='5 stars' 
+                      homeRating={rating} 
                 />
             </div>
 
@@ -19,7 +22,7 @@ const AllHomes = () => {
                       homePrice="1MBT"
                       homeDistance="2345km" 
                       homeAvailability="available for 2weeks stay"
-                      homeRating='5 stars' 
+                      homeRating={rating} 
                 />
             </div>
 
@@ -29,7 +32,7 @@ const AllHomes = () => {
                       homePrice="1MBT"
                       homeDistance="2345km" 
                       homeAvailability="available for 2weeks stay"
-                      homeRating='5 stars' 
+                      homeRating={rating} 
                 />
             </div>
 
@@ -39,7 +42,7 @@ const AllHomes = () => {
                       homePrice="1MBT"
                       homeDistance="2345km" 
                       homeAvailability="available for 2weeks stay"
-                      homeRating='5 stars' 
+                      homeRating={rating} 
                 />
             </div>
 
@@ -49,7 +52,7 @@ const AllHomes = () => {
                       homePrice="1MBT"
                       homeDistance="2345km" 
                       homeAvailability="available for 2weeks stay"
-                      homeRating='5 stars' 
+                      homeRating={rating} 
                 />
             </div>
 
@@ -59,7 +62,7 @@ const AllHomes = () => {
                       homePrice="1MBT"
                       homeDistance="2345km" 
                       homeAvailability="available for 2weeks stay"
-                      homeRating='5 stars' 
+                      homeRating={rating} 
                 />
             </div>
 
@@ -69,7 +72,7 @@ const AllHomes = () => {
                       homePrice="1MBT"
                       homeDistance="2345km" 
                       homeAvailability="available for 2weeks stay"
-                      homeRating='5 stars' 
+                      homeRating={rating} 
                 />
             </div>
 
@@ -79,7 +82,7 @@ const AllHomes = () => {
                       homePrice="1MBT"
                       homeDistance="2345km" 
                       homeAvailability="available for 2weeks stay"
-                      homeRating='5 stars' 
+                      homeRating={rating} 
                 />
             </div>
     </div>
