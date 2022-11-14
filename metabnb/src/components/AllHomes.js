@@ -8,8 +8,8 @@ const AllHomes = ( {homeImgs} ) => {
     <div className="all-homes">
         {homeImgs.map( (item, id) => {
                 return (
-                    <div className="homes-container">
-                        <Home key={id} cardName={item}
+                    <div key={id} className="homes-container">
+                        <Home cardName={item}
                                             homeName="Desert king"
                                             homePrice="1MBT"
                                             homeDistance="2345km" 
