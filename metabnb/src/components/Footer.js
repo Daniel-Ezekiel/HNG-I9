@@ -3,6 +3,7 @@ import FooterNavBox from "./FooterNavBox";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const communityLinks = ['NFT', 'Tokens', 'Landlords', 'Discord'];
@@ -13,7 +14,9 @@ const Footer = () => {
     <footer>
         <section className="footer-nav">
             <div className="metabnb-profile">
-                <Image imgSrc={"img/metabnb-logo1.png"} />
+                <Link to="/">
+                  <Image imgSrc={"img/metabnb-logo1.png"} />
+                </Link>
 
                 <div className='social-icons'>
                     <FaFacebookF />

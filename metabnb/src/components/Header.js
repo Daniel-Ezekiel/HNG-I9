@@ -24,13 +24,15 @@ const Header = () => {
         <header>
             <nav>
                 <div className='logo'>
-                    <Image imgSrc={"img/metabnb-logo.png"} />
+                    <Link to="/">
+                        <Image imgSrc={"img/metabnb-logo.png"} />
+                    </Link>
                 </div>
 
                 <ul className='nav-menu'>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/placetostay">Place to Stay</Link></li>
-                    <li><Link to="#nft-section">NFTs</Link></li>
+                    <li><Link to="#">NFTs</Link></li>
                     <li><Link to="#">Community</Link></li>
                     <li>
                         <Link to="#">
